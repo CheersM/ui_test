@@ -1,0 +1,426 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+}
+.line {
+  min-height: 10px;
+  margin: 0 20px;
+  background-color: limegreen;
+}
+.wrapper {
+  margin: 0px 20px 40px 20px;
+  background-color: #fff;
+}
+.nav {
+  text-align: center;
+  display: inline-flex;
+  margin: 0px 10px;
+}
+.menu {
+  text-align: center;
+}
+li {
+  display: inline-flex;
+  padding: 40px 10px 15px 10px;
+}
+.menu a:hover {
+  color: #fff;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+.nav li:hover {
+  background-color: limegreen;
+}
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid limegreen;
+  margin: 0px 15px 15px 15px;
+  padding: 0 5px 0px 5px;
+}
+.nav_menu .name {
+  float: left;
+  width: 30%;
+  padding: 10px 0;
+}
+.nav_menu .menu {
+  float: left;
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+}
+.nav_menu .name a {
+  font-size: 40px;
+}
+.nav_menu .name span {
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 100px;
+  opacity: 0.7;
+}
+.sliderWrapper {
+  position: relative;
+}
+.sliderTextWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+.sliderText {
+  width: 920px;
+  margin: 0 auto;
+  padding: 0 62px 25px 0;
+}
+.sliderText-top {
+  max-width: 350px;
+  background-color: #a7c353;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 25px;
+  text-align: center;
+}
+.sliderText-top span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.sliderText-bottom {
+  max-width: 350px;
+  background-color: #fff;
+  margin-left: auto;
+  padding: 15px;
+  font-size: 15px;
+}
+/*НАСТРОЙКА СЛАЙДЕРА*/
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slick-list {
+  overflow: hidden;
+}
+.sliderItem {
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  justify-content: center;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  margin: 30px 0px 0px 0px;
+  border: none;
+}
+.slider {
+  position: relative;
+  width: 920px;
+  height: 350px;
+  margin: 0 20px 90px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: limegreen;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+.slider img {
+  width: 920px;
+  height: 350px;
+}
+h2 {
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-size: 30px;
+}
+.info {
+  display: flex;
+  margin: 100px 20px 10px 20px;
+  padding-bottom: 20px;
+}
+.aboutUs {
+  flex: 1;
+}
+.more {
+  text-align: right;
+  padding-top: 5px;
+}
+.info a {
+  color: limegreen;
+  font-size: 20px;
+}
+.info a:hover {
+  color: aqua;
+  font-size: 23px;
+  transition: 0.2s;
+}
+.about_img {
+  padding: 15px 0;
+  display: inline-flex;
+  margin: 10px 0 0 40px;
+}
+.about_text {
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: "EB Garamond", serif;
+}
+.service {
+  flex: 1;
+}
+.serv1 {
+  display: flex;
+  margin: 20px;
+}
+.serv_text {
+  margin-left: 15px;
+  opacity: 0.7;
+}
+.serv_text h3 {
+  margin-bottom: 5px;
+}
+.comments {
+  flex: 1;
+}
+.num {
+  display: inline-block;
+  padding: 0 15px;
+}
+.num1 {
+  display: flex;
+  opacity: 0.7;
+  align-items: center;
+}
+.num1 h3 span {
+  font-size: 20px;
+}
+.num2 {
+  font-size: 15px;
+  opacity: 0.7;
+}
+.contacts {
+  color: #fff;
+  display: flex;
+  margin: 20px;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+}
+.cont {
+  width: 25%;
+  display: block;
+  padding: 0 15px;
+}
+.cont a {
+  color: limegreen;
+  font-size: 17px;
+}
+.cont_title h3 {
+  font-family: "EB Garamond", serif;
+  text-align: left;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.cont_line {
+  border-top: 1px solid rgba(138, 138, 138, 0.3);
+  margin: 15px 15px 15px 0;
+  font-size: 13px;
+  opacity: 0.4;
+}
+.cont_line div {
+  margin: 15px 0;
+}
+
+.cont_line1 {
+  border-top: 1px solid rgba(138, 138, 138, 0.3);
+  margin: 15px 15px 15px 0;
+  font-size: 13px;
+  opacity: 0.4;
+}
+.some {
+  border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+  padding: 5px;
+}
+.some a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.some span{
+    font-size: 17px;
+    font-family: "EB Garamond", serif;
+}
+.some a img {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cont_text h3 {
+  margin-bottom: 10px;
+}
+.read_more {
+  text-align: right;
+}
+.form input,
+textarea {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+.subform input[type="text"]:focus,
+.subform input[type="email"]:focus,
+.subform textarea:focus {
+  color: #000;
+  opacity: 1;
+}
+.subform input[type="submit"] {
+  background-color: limegreen;
+  opacity: 1;
+}
+.main_text {
+  display: flex;
+  color: #fff;
+  opacity: 0.3;
+  font-size: 13px;
+  margin: 0 20px 20px 20px;
+}
+.foot1 {
+  text-align: left;
+  width: 50%;
+}
+.foot2 {
+  text-align: right;
+  width: 50%;
+}
