@@ -419,11 +419,18 @@ h2 {
 }
 .form input,
 textarea {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #383838;
   border: none;
   width: 225px;
+}
+.subform input[type="text"],
+.subform input[type="email"]{
+    height: 30px;
+}
+textarea{
+    height: 110px;
 }
 .subform input[type="text"]:focus,
 .subform input[type="email"]:focus,
