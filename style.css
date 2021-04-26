@@ -107,11 +107,22 @@ a:active{
 body {
   background-color: #313131;
   color: #666666;
+  line-height: 18.2px;
 }
 a {
   text-decoration: none;
   font-family: "Georgia", serif;
-  color: #666666;
+  color: #9999;
+}
+@media screen and (max-width: 600px) {
+    .all_content{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 249px) {
+    .all_content{
+        max-width: none;
+    }
 }
 .all_content{
     max-width: 1200px;
@@ -135,7 +146,7 @@ a {
 .menu {
   text-align: center;
 }
-li {
+.nav li {
   display: inline-flex;
   padding: 40px 15px 15px 15px;
 }
@@ -156,11 +167,13 @@ li {
   border-bottom: 1px solid #a7c353;
   margin: 0px 15px 15px 15px;
   padding: 0 5px 0px 5px;
+  max-height: 95px;
 }
 .nav_menu .name {
   float: left;
   width: 30%;
-  padding: 10px 0;
+  max-width: 310px;
+  padding: 20px 0 10px 0;
 }
 .nav_menu .menu {
   float: left;
@@ -172,28 +185,31 @@ li {
 }
 #firstLet{
     font-size: 32px;
-    opacity: 1;
+    color: #666666;
 }
 .nav_menu .name a {
   font-size: 26px;
+  color: #666666;
   
 }
 .nav_menu .name span {
   font-size: 12px;
-  opacity: 0.4;
+  color: #999999;
 }
-
 h1 {
   font-family: 'Georgia';
   font-style: italic;
   font-size: 22px;
   text-align: center;
-  margin: 40px 90px;
+  margin: 45px 125px;
   color: #666666;
-  
+  line-height: 30.8px;
 }
 .sliderWrapper {
   position: relative;
+  margin: 0 auto;
+  max-height: 350px;
+  max-width: 920px;
 }
 .sliderTextWrapper {
   position: absolute;
@@ -227,7 +243,6 @@ h1 {
   font-size: 13px;
   color: #999999;
 }
-/*НАСТРОЙКА СЛАЙДЕРА*/
 .slick-track {
   display: flex;
   align-items: flex-start;
@@ -252,16 +267,16 @@ h1 {
   cursor: pointer;
 }
 .slick-next{
-    right: 0;
+    right: 0px;
     background: none;
-    background-image: url(img/NEXT.png);
-    background-size: cover;
+    background-image: url(img/right.png);
+    background-size: contain;
 }
 .slick-prev{
-    left: 0;
+    left: 0px;
     background: none;
-    background-image: url(img/PREV.png);
-    background-size: cover;
+    background-image: url(img/left.png);
+    background-size: contain;
 }
 .slider {
   position: relative;
@@ -281,7 +296,7 @@ h1 {
 }
 .slick-dots li {
   list-style: none;
-  margin: 0 10px;
+  padding: 20px 2.5px;
 }
 .slick-dots button {
   font-size: 0;
@@ -289,7 +304,7 @@ h1 {
   height: 20px;
   background-color: #a7c353;
   border-radius: 50%;
-  border: 3px solid #a7c353;
+  border: 4px solid #a7c353;
 }
 .slick-dots li.slick-active button {
   background-color: #fff;
@@ -306,15 +321,18 @@ h2 {
 }
 .info {
   display: flex;
-  margin: 100px 20px 10px 20px;
-  padding-bottom: 20px;
+  max-width: 920px;
+  border-top: 1px solid #e2e2e2;
+  margin: 75px auto 10px auto;
+  padding: 45px 0;
 }
 .aboutUs {
   flex: 1;
+  max-width: 280px;
+  margin-right: 20px;
 }
 .more {
   text-align: right;
-  padding-top: 5px;
   margin-top: 10px;
   font-size: 13px;
 }
@@ -325,26 +343,35 @@ h2 {
 .info a:hover {
   color: #728c39;
 }
+.about_title{
+  margin-bottom: 30px;
+}
 .about_img {
-  padding: 15px 0;
-  display: inline-flex;
-  margin: 10px 0 0 40px;
+  text-align: center;
+}
+.about_img img{
+    margin: 0 auto;
 }
 .about_text {
   font-size: 13px;
   font-family: "Georgia";
   color: #999999;
+  margin-top: 20px;
 }
 .service {
   flex: 1;
+  max-width: 280px;
+  margin: 0 20px;
+}
+.service_title{
+    margin-bottom: 30px;
 }
 .serv1 {
   display: flex;
-  margin: 20px;
+    margin-bottom: 10px;
 }
 .serv_text {
-  margin-left: 15px;
-  opacity: 0.7;
+  margin: 5px 15px;
 }
 .serv_text h3 {
   margin-bottom: 5px;
@@ -357,19 +384,25 @@ h2 {
 }
 .comments {
   flex: 1;
+  max-width: 280px;
+  margin-left: 20px;
+}
+.comments_title{
+  margin-bottom: 15px;
 }
 .num {
   display: inline-block;
-  padding: 0 15px;
 }
 .num1 {
   display: flex;
-  opacity: 0.7;
   align-items: center;
+  color: #989898;
 }
 .num1 h3 span{
   font-size: 16px;
-  color: #989898;
+}
+.num1 img{
+    margin: 0 5px 5px 0;
 }
 .num2 {
   font-size: 13px;
@@ -380,14 +413,18 @@ h2 {
 .contacts {
   color: #999999;
   display: flex;
-  margin: 8px;
-  border-bottom: 1px solid #3a3a3a;
+  margin: 0 auto;
+  line-height: 19.2px;
+  max-width: 960px;
 }
 .cont {
   width: 25%;
   display: block;
+  min-width: 225px;
+}
+.cont1{
+  min-width: 225px;
   margin: 0 25px;
-  padding: 0 -25px;
 }
 .cont a {
   color: #a7c353;
@@ -408,7 +445,6 @@ h2 {
 .cont_line div {
   margin: 15px 0;
 }
-
 .cont_line1 {
   border-top: 1px solid #3a3a3a;
   margin: 15px 15px 15px 0;
@@ -423,10 +459,11 @@ h2 {
   flex-direction: row;
   align-items: center;
   font-size: 12px;
+  color: #a7c353;
 }
 .some a:hover, .some span:hover{
   color: #80ba70;
-  font-size: 14px;
+  font-size: 13px;
   transition: 0.2s; 
 }
 .some span{
@@ -434,7 +471,7 @@ h2 {
     font-family: "Georgia", serif;
 }
 .some a img {
-  background-color: #fff;
+  background-color: #383838;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -448,6 +485,9 @@ h2 {
 .read_more {
   text-align: right;
   font-size: 12px;
+}
+.read_more a{
+    color: #a7c353;
 }
 .read_more a:hover{
   color: #728c39;
@@ -463,6 +503,16 @@ textarea {
 .subform input[type="text"],
 .subform input[type="email"]{
     height: 30px;
+    color: #989898;
+}
+input[type="text"]::placeholder{
+    color: #989898;
+}
+input[type="email"]::placeholder{
+    color: #989898;
+}
+textarea::placeholder{
+    color: #989898;
 }
 textarea{
     height: 110px;
@@ -471,24 +521,29 @@ textarea{
 .subform input[type="email"]:focus,
 .subform textarea:focus {
   background-color: #817979;
+  color: #000;
 }
 .subform input[type="submit"] {
   background-color: #a7c353;
   width: 80px;
   padding: 10px;
   cursor: pointer;
-    display: table;
+  display: table;
 }
 .subform input[type="submit"]:hover{
   font-size: 1em;
-    transition: .2s;
-    color: #fff;
+  transition: .2s;
+  color: #fff;
 }
 .main_text {
   display: flex;
   color: #999999;
   font-size: 12px;
-  margin: 0 20px 20px 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-height: 53px;
+  max-width: 960px;
+  border-top: 1px solid #3a3a3a;
 }
 .foot1 {
   text-align: left;
