@@ -348,6 +348,8 @@ h2 {
 }
 .about_img {
   text-align: center;
+  border: 1px solid #e2e2e2;
+  padding: 5px;
 }
 .about_img img{
     margin: 0 auto;
@@ -507,12 +509,15 @@ textarea {
 }
 input[type="text"]::placeholder{
     color: #989898;
+    padding: 10px;
 }
 input[type="email"]::placeholder{
     color: #989898;
+    padding: 10px;
 }
 textarea::placeholder{
     color: #989898;
+    padding: 10px;
 }
 textarea{
     height: 110px;
